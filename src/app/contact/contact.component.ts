@@ -44,6 +44,11 @@ export class ContactComponent implements OnInit {
 
   	console.log("FORM SEND");
 
+    console.log("Mat Form FIeld");
+  }
+
+  isVisible(): Boolean {
+    return true;
   }
 
 }
