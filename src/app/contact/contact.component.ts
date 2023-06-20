@@ -43,7 +43,6 @@ export class ContactComponent implements OnInit {
   onSubmit() {
 
   	console.log("FORM SEND");
-    console.log("conflicto1");
 
   }
 
