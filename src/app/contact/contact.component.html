@@ -24,6 +24,15 @@
 					  </mat-form-field>
 
 					  <mat-form-field appearance="outline" color="accent">
+						<mat-label>Please enter your name2 </mat-label>
+					  <input matInput placeholder="Name" [formControl]="nameFormControl"
+							 [errorStateMatcher]="matcher">
+					  <mat-error *ngIf="nameFormControl.hasError('required')">
+						Name is <strong>required</strong>
+					  </mat-error>
+					</mat-form-field>
+
+					  <mat-form-field appearance="outline" color="accent">
 					  	<mat-label>Please enter your phone </mat-label>
 					    <input matInput placeholder="Phone" [formControl]="phoneFormControl"
 					           [errorStateMatcher]="matcher">
